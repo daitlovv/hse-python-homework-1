@@ -1,4 +1,5 @@
 from datetime import datetime
+import uuid
 
 class Comment:
     def __init__(self, author_id: uuid.UUID, text: str) -> None:
