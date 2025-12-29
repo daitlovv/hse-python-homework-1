@@ -1,4 +1,7 @@
-def select_top_users_by_rate(users, top_size):
+from typing import List
+from models.user import User
+
+def select_top_users_by_rate(users: List[User], top_size: int) -> List[User]:
     if top_size <= 0:
         return []
 

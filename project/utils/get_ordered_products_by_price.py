@@ -1,4 +1,7 @@
-def get_ordered_products_by_price(products):
+from typing import List
+from models.product import Product
+
+def get_ordered_products_by_price(products: List[Product]) -> List[Product]:
     result = list(products)
 
     for i in range(len(result)):
